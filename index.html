@@ -1,0 +1,119 @@
+<!--31.12.2019-->
+<!--7º site, 1º todo usando VIM!-->
+<!--Refatorado em 24.04.2020-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/cf859e024f.js" crossorigin="anonymous"></script>
+	<title>Primeiro Site com VIM</title>
+</head>
+
+<body>
+	<main>
+		<div class="container">
+
+			<h1>MEU PRIMEIRO SITE COM VIM</h1>
+
+			<h2>Muito orgulhoso e satisfeito de ter começado a usar o VIM!</h2>
+			<h3>Agora, listarei alguns comandos que estou aprendendo nesse editor fantástico!</h3>
+
+			<br>
+			<ul style="text-align:left;">
+				<li><strong>Ctrl+y+,</strong> => Emmet completar</li>
+				<li><strong>Ctrl+x Ctrl+o</strong> => autocompletar no CSS</li>
+				<li><strong>:#</strong> da linha => cursor para o número da linha especificada </li>
+				<li><strong>$</strong> => final da linha</li>
+				<li><strong>0</strong> => início da linha</li>
+				<li><strong>Esc</strong> => sai do modo de inserção</li>
+				<li><strong>i</strong> => modo inserção</li>
+				<li><strong>I</strong> => modo inserção no início da linha</li>
+				<li><strong>A</strong> => modo inserção no final da linha</li>
+				<li><strong>gg</strong> => ir para o começo do arquivo</li>
+				<li><strong>G</strong> => ir para o final do arquivo</li>
+				<li><strong>Ctrl+n</strong> => completa com palavra já digitada</li>
+				<li><strong>:w</strong> => (modo normal) salva arquivo</li>
+				<li><strong>v</strong> => entra no modo seleção</li>
+				<li><strong>y</strong> => copia o que estiver selecionado</li>
+				<li><strong>d</strong> => recorta o que foi copiado</li>
+				<li><strong>/+palavra</strong> => procura pela palavra</li>
+				<li><strong>w</strong> => (normal mode) move uma palavra de cada vez pra frente</li>
+				<li><strong>b</strong> => (normal mode) move uma palavra de cada vez pra trás</li>
+				<li><strong>/+palavra</strong> => (normal mode) procura pela palavra digitada</li>
+				<li><strong>aw</strong> => (visual mode) selecinar palavra onde estiver o cursor</li>
+				<li><strong>gn</strong> => após procurar a palavra com "/", usar "gn" para selecionar a mesma palavra em
+					outros locais e depois de selecionadas todas as palavras necessárias, pressionar "c" para digitar e
+					trocar ao mesmo tempo as palavras selecionadas</li>
+				<li><strong>aw</strong> => (visual mode) selecinar palavra onde estiver o cursor<F2>
+						<F2>
+				</li>
+				<li><strong>Ctrl+V</strong> => (modo normal)seleciona a linha inteira
+				<li><strong>u</strong> => desfaz última ação (igual a ctrl+z)
+				<li><strong>ggVG</strong> => seleciona tudo
+
+			</ul>
+			<div class="links">
+
+				<h3>Alguns links muito úteis sobre o VIM</h3>
+				<p><a href="https://woliveiras.com.br/posts/Comecando-com-o-editor-de-texto-VIM/">Começando com o
+						VIM</a>
+				</p>
+				<p><a href="https://vimsheet.com/">Vim Cheat Sheet</a></p>
+				<p><a href="https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9">Plugins
+						Essenciais
+						(2018)</a></p>
+				<p><a href="https://medium.com/vim-drops/css-autocompletion-on-vim-no-plugins-needed-e8df9ce079c7">CSS
+						no
+						VIM</a></p>
+				<p><a href="https://aurelio.net/vim/vim-comandos.html">Comandos do Vim (VI)</a></p>
+				<p><a href="https://www.vim.org/">Vim</a></p>
+			</div>
+
+			<section class="contato">
+
+				<h3>Contatos</h3>
+
+				<form action="mailto:cabralguerra@gmail.com" method="post">
+					<input type="submit" value="Email" name="Enviar email">
+				</form>
+
+				<a href="https://api.whatsapp.com/send?phone=5579988284730&text=Entrar em contato" target="_blank">
+					<i class="fab fa-whatsapp-square effect"></i></a>
+
+				<a href="https://twitter.com/teufel8"><i class="fab fa-twitter-square effect"></i></a>
+
+				<a href="https://www.instagram.com/cabralguerra/"><i class="fab fa-instagram-square effect"></i></a>
+
+				<a href='https://br.linkedin.com/in/cabralguerra'><i class="fab fa-linkedin effect"></i></a>
+				<a href="https://www.facebook.com/cabral8guerra"><i class="fab fa-facebook-square effect"></i></a>
+
+			</section>
+			<p id="date"></p>
+	</main>
+
+	</div>
+
+	<footer>
+		&copy;2019 - Primeiro Site desenvolvido usando VIM por <a href="https://jcgsr.github.io/">Jovane Rocha</a>. <br>
+		Todos os Direitos Reservados.
+	</footer>
+
+	<script>
+		let today = new Date();
+		let formatDate = today.toLocaleDateString('pt-BR', {
+			weekday: 'long',
+			day: '2-digit',
+			month: 'short',
+			year: 'numeric'
+		});
+		let selectElement = document.getElementById('date');
+		selectElement.innerHTML = formatDate;
+	</script>
+</body>
+
+</html>
