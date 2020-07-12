@@ -3,7 +3,7 @@
 *, *::after, *::before{box-sizing: border-box;}
 
 body{
-  font-family:'Handlee', 'Comic-Sans', cursive;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   background-image: url("images/vim.jpg");
   background-repeat: no-repeat;
