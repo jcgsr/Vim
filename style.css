@@ -23,6 +23,15 @@ footer{
   padding: 1rem;
 }
 
+li strong{
+	background-color: black;
+	padding: .2rem 1rem;
+}
+
+li {
+	margin-bottom: 1rem;
+}
+
 contato h3{
   font-size: 2rem;
   padding-bottom: -2rem;
