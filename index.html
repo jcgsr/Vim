@@ -2,14 +2,15 @@
 <!--7º site, 1º todo usando VIM!-->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/cf859e024f.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="style.css">
 	<title>Primeiro Site com VIM</title>
 </head>
 
@@ -17,33 +18,53 @@
 	<main>
 		<div class="container">
 
-			<h1>MEU PRIMEIRO SITE COM VIM</h1>
+			<h1 >MEU PRIMEIRO SITE COM VIM</h1>
 
 			<h2>Muito orgulhoso e satisfeito de ter começado a usar o VIM!</h2>
-			<h3>Agora, listarei alguns comandos que estou aprendendo nesse editor fantástico!</h3>
+			<h4>Agora, listarei alguns comandos que estou aprendendo nesse editor fantástico!</h4>
 
 			<br>
-			<ul style="text-align:left;">
-				<li><strong>Ctrl x Ctrl o</strong> => autocompletar (.vimrc configurado para tal) </li>
-				<li><strong>:(# da linha)</strong> => cursor para o número da linha especificada </li>
-				<li><strong>$</strong> => ir para o final da linha</li>
-				<li><strong>H</strong> => ir para o topo da tela</li>
-            <li><strong>M</strong> => ir para o meio da tela</li>
-				<li><strong>L</strong> => ir para o final da tela</li>
-				<li><strong>0</strong> => ir para o início da linha</li>
-				<li><strong>Esc</strong> => sai do modo de inserção</li>
+      <div class="basics">
+
+        <h3>Básico</h3>
+<ul>
+  
 				<li><strong>i</strong> => modo inserção</li>
+				<li><strong>Esc</strong> => sai do modo de inserção</li>
 				<li><strong>I</strong> => modo inserção no início da linha</li>
 				<li><strong>A</strong> => modo inserção no final da linha</li>
+				<li><strong>v</strong> => entra no modo seleção</li>
+				<li><strong>u</strong> => desfaz última ação (igual a ctrl+z)</li>
+				<li><strong>Ctrl r</strong> => (visual mode) desfazer o desfeito ("Ctrl + y")</li>
+				<li><strong>:w</strong> => (modo normal) salva arquivo</li>
+				<li><strong>/palavra</strong> => (normal mode) procura pela palavra digitada</li>
+</ul>
+      </div>
+
+      <div class="move">
+        <h3>Movimentação</h3>
+        <ul>
+
+				<li><strong>:(número da linha)</strong> => cursor para o número da linha especificada </li>
+
+				<li><strong>$</strong> => ir para o final da linha</li>
+				<li><strong>H</strong> => ir para o topo da tela</li>
+        <li><strong>M</strong> => ir para o meio da tela</li>
+				<li><strong>L</strong> => ir para o final da tela</li>
+				<li><strong>0</strong> => ir para o início da linha</li>
 				<li><strong>gg</strong> => ir para o começo do arquivo</li>
 				<li><strong>G</strong> => ir para o final do arquivo</li>
-				<li><strong>Ctrl n</strong> => completa com palavra já digitada</li>
-				<li><strong>:w</strong> => (modo normal) salva arquivo</li>
-				<li><strong>v</strong> => entra no modo seleção</li>
-				<li><strong>o</strong> => (modo normal) insere linha em branco abaixo</li>
-				<li><strong>O</strong> => (modo normal) insere linha em branco acima</li>
 				<li><strong>e</strong> => (modo normal) final da palavra</li>
 				<li><strong>}</strong> => (modo normal) final do parágrafo</li>
+				<li><strong>w</strong> => (normal mode) move uma palavra de cada vez pra frente</li>
+				<li><strong>b</strong> => (normal mode) move uma palavra de cada vez pra trás</li>
+        </ul>
+      </div>
+      <div class="edit">
+        <ul>
+<h3>Edição</h3>
+				<li><strong>o</strong> => (modo normal) insere linha em branco abaixo</li>
+				<li><strong>O</strong> => (modo normal) insere linha em branco acima</li>
 				<li><strong>y</strong> => (visual mode) copia o que estiver selecionado</li>
 				<li><strong>yy</strong> => (visual/normal mode) copia linha inteira</li>
 				<li><strong>d</strong> => (visual mode) deleta/recorta o que foi copiado</li>
@@ -52,19 +73,18 @@
 				<li><strong>d$</strong> => (normal mode) deleta até o final da linha</li>
 				<li><strong>dG</strong> => (normal mode) deleta até o fim do documento</li>
 				<li><strong>d}</strong> => (normal mode) deleta até o fim do parágrafo</li>
-				<li><strong>di(...)</strong> => (normal mode) deleta o que estiver dentro de (aspas, parênteses). Ex.: 'di()' = deleteta tudo o que estiver dentro dos parênteses.</li>
+				<li><strong>di(...)</strong> => (normal mode) deleta o que estiver dentro de (aspas, parênteses). Ex.: 'di()' = deleta tudo o que estiver dentro dos parênteses.</li>
 				<li><strong>dd</strong> => (visual mode) deleta/recorta linha inteira</li>
 				<li><strong>c</strong> => (normal mode) "change" deleta e já coloca em em modo de inserção. Pode combinar assim como o 'd'. Ex.: ci(...), cw, etc.</li>
 				<li><strong>p</strong> => (visual mode) cola o que estiver selecionado/recortado</li>
-				<li><strong>u</strong> => (visual mode) desfazer ("Ctrl + z")</li>
-				<li><strong>Ctrl r</strong> => (visual mode) desfazer o desfeito ("Ctrl + y")</li>
-				<li><strong>w</strong> => (normal mode) move uma palavra de cada vez pra frente</li>
-				<li><strong>b</strong> => (normal mode) move uma palavra de cada vez pra trás</li>
-				<li><strong>/palavra</strong> => (normal mode) procura pela palavra digitada</li>
 				<li><strong>aw</strong> => (visual mode) selecinar palavra onde estiver o cursor</li>
-				<li><strong>gnc. </strong> => após procurar a palavra com "/", usar "gn" para selecionar a palavra, "c" para editar, "Esc", "n" para encontrá-la em outros locais e  "." no local selecionado para alterar</li>
 				<li><strong>Ctrl V</strong> => (modo normal)seleciona a linha inteira</li>
-				<li><strong>u</strong> => desfaz última ação (igual a ctrl+z)</li>
+        </ul>
+      </div>
+      <div class="advanced">
+        <h3>Avançado</h3>
+	<ul>
+				<li><strong>gnc.</strong> => após procurar a palavra com "/", usar "gn" para selecionar a palavra, "c" para editar, "Esc", "n" para encontrá-la em outros locais e  "." no local selecionado para alterar</li>
 				<li><strong>ggVG</strong> => seleciona tudo</li>
 				<li><strong>~(espaço)</strong> (normal mode) troca maiúscula por minúscula e vice-versa</li>
 				<li><strong>3~(espaço)</strong> (normal mode) troca maiúscula por minúscula e vice-versa de três caracteres</li>
@@ -77,7 +97,9 @@
 				<li><strong>.</strong> (normal mode) repete última ação feita.</li>
 
 			</ul>
-			<div class="links">
+
+      </div>
+					<div class="links">
 
 				<h3>Alguns links muito úteis sobre o VIM</h3>
 				<p><a href="https://woliveiras.com.br/posts/Comecando-com-o-editor-de-texto-VIM/">Começando com o
