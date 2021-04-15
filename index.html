@@ -102,6 +102,15 @@
         <h3>Avançado</h3>
 	<ul>
 				<li><strong>gnc.</strong> => após procurar a palavra com "/", usar "gn" para selecionar a palavra, "c" para editar, "Esc", "n" para encontrá-la em outros locais e  "." no local selecionado para alterar</li>
+        <li><strong>:s/palavra_procurada/nova_palavra/g</strong> =>
+          procura uma palavra e a substitui pela nova palavra apenas na
+        linha atual</li> 
+        <li><strong>:%s/palavra_procurada/nova_palavra/g</strong> =>
+          procura uma palavra e a substitui pela nova palavra em todas
+          as linhas</li>
+        <li><strong>:%s/palavra_procurada/nova_palavra/gc</strong> =>
+          procura uma palavra e a substitui pela nova palavra em todas
+          as linhas, mas pede confirmação para cada ocorrência</li>
 				<li><strong>ggVG</strong> => seleciona tudo</li>
 				<li><strong>~(espaço)</strong> (normal mode) troca maiúscula por minúscula e vice-versa</li>
 				<li><strong>3~(espaço)</strong> (normal mode) troca maiúscula por minúscula e vice-versa de três caracteres</li>
