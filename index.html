@@ -96,12 +96,23 @@
 				<li><strong>d$</strong> => (normal mode) deleta até o final da linha</li>
 				<li><strong>dG</strong> => (normal mode) deleta até o fim do documento</li>
 				<li><strong>d}</strong> => (normal mode) deleta até o fim do parágrafo</li>
-				<li><strong>di(...)</strong> => (normal mode) deleta o que estiver dentro de (aspas, parênteses). Ex.: 'di()' = deleta tudo o que estiver dentro dos parênteses.</li>
+        <li><strong>di(...)</strong> => (normal mode) deleta o que estiver
+              dentro de (aspas, parênteses). Ex.: 'di()' = deleta tudo o que
+              estiver dentro dos parênteses.</li>
 				<li><strong>dd</strong> => (visual mode) deleta/recorta linha inteira</li>
-				<li><strong>c</strong> => (normal mode) "change" deleta e já coloca em em modo de inserção. Pode combinar assim como o 'd'. Ex.: ci(...), cw, etc.</li>
+        <li><strong>c</strong> => (normal mode) "change" deleta e já coloca em
+              em modo de inserção. Pode combinar assim como o 'd'. Ex.:
+              ci(...), cw, etc.</li>
 				<li><strong>p</strong> => (visual mode) cola o que estiver selecionado/recortado</li>
 				<li><strong>aw</strong> => (visual mode) selecinar palavra onde estiver o cursor</li>
-				<li><strong>Ctrl V</strong> => (modo normal)seleciona a linha inteira</li>
+        <li><strong>Ctrl V</strong> => (modo normal)seleciona a linha
+              inteira</li> 
+        <li><strong>gw</strong> => (normal mode) após
+              selecionar parágrafo com "v", "gw" para encurtar o tamanho das
+              linhas</li>
+        <li><strong>v at/it</strong> => (visual mode) colocar cursor em cima da
+              tag, "v", depois "at" (incluir tag) ou "it" (selecionar apenas o
+              que está dentro da tag)</li>
         </ul>
       </div>
       <div class="advanced animate__animated animate__zoomInLeft">
@@ -128,12 +139,16 @@
 				<li><strong>:m (# da linha)</strong> (normal mode) move linha na posição do cursor para o número informado</li>
 				<li><strong>.</strong> (normal mode) repete última ação feita.</li>
 				<li><strong>:sp</strong> (normal mode) divide a janela
-          horizontalmente.</li>
+          horizontalmente</li>
 				<li><strong>:vsp</strong> (normal mode) divide a janela
-          verticalmente.</li>
-<li><strong>"+y</strong> (visual mode) após selecionar o que quiser com
-<em>v</em>, usar essa combinação para copiar para o clipboard</li>
-<li><strong>Ctrl V</strong></li> selecionar verticalmente.
+          verticalmente</li>
+        <li><strong>"+y</strong> (visual mode) após selecionar o que quiser com
+        <em>v</em>, usar essa combinação para copiar para o clipboard</li>
+        <li><strong>Ctrl V</strong> selecionar verticalmente</li>
+        <li><strong>Ctrl V + Shift i</strong> seleciona as linhas com "Ctrl v",
+              depois "shift i" para editar a primeira linha, então, "esc": a
+              alteração acontece em todas as linhas anteriormente
+              selecionadas</li>
 			</ul>
 
       </div>
