@@ -144,11 +144,13 @@
           verticalmente</li>
         <li><strong>"+y</strong> (visual mode) após selecionar o que quiser com
         <em>v</em>, usar essa combinação para copiar para o clipboard</li>
-        <li><strong>Ctrl V</strong> selecionar verticalmente</li>
-        <li><strong>Ctrl V + Shift i</strong> seleciona as linhas com "Ctrl v",
+        <li><strong>Ctrl v</strong> selecionar verticalmente</li>
+        <li><strong>Ctrl v + Shift i</strong> seleciona as linhas com "Ctrl v",
               depois "shift i" para editar a primeira linha, então, "esc": a
               alteração acontece em todas as linhas anteriormente
               selecionadas</li>
+        <li><strong>:s/palavra_buscada/palavra_nova/opção</strong>(normal mode) procura a palavar e a substitui por outra em uma única linha. As "opções" são: <em>c</em> (confirmation), <em>i</em> (ignore case) e <em>g</em> trocar todas as ocorrências na linha.</li>
+        <li><strong>:%s/palavra_buscada/palavra_nova/g</strong>: troca a palavra buscada em o arquivo trocando-a pela nova.</li>
 			</ul>
 
       </div>
@@ -198,7 +200,6 @@
 		&copy;2019 - Primeiro Site desenvolvido usando VIM por <a href="https://jcgsr.github.io/">Jovane Rocha</a>. <br>
 		Todos os Direitos Reservados.
 	</footer>
-
 	<script>
 		let today = new Date();
 		let formatDate = today.toLocaleDateString('pt-BR', {
